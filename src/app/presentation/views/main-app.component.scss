@@ -1,0 +1,29 @@
+app-footer{
+  position:fixed;
+  bottom:0px;
+  width: 100%;
+  overflow:auto
+}
+
+.Dynamic_Content{
+  position: fixed;
+}
+
+.Main_Content{
+  display: flex;
+  flex-direction: column;
+}
+
+mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.example-container {
+  width: 400px;
+  height: 200px;
+  margin: 12px;
+  border: 1px solid #555;
+}

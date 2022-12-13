@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-raised-button (click)="toggle.next(true)">Toggle drawer</button>
+        <span>My App</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon" [matMenuTriggerFor]="menu" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  
+<mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/dashboard">
+      <mat-icon>dialpad</mat-icon>
+      <span>Dashboard</span>
+    </button>
+    <button mat-menu-item routerLink="/profile">
+      <mat-icon>voicemail</mat-icon>
+      <span>Check voice mail</span>
+    </button>
+</mat-menu>
+  
+  
