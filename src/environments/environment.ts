@@ -12,7 +12,9 @@ export const environment = {
         users: '/users'
       }
     }
-  }
+  },
+
+  apiKey: '{SECRET_API_KEY}'
 };
 
 /*
