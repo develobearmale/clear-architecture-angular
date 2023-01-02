@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage",
-    "build:prod": "ng build --deploy-url /develo-clean/",
+    "build:prod": "ng build --deploy-url /clear-architecture-angular/",
     "lint": "ng lint"
   },
   "private": true,
