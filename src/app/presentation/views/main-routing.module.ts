@@ -5,7 +5,8 @@ import { MainAppComponent } from './main-app.component';
 
 const routes: Routes = [
   {
-    path: '', component: MainAppComponent,
+    path: '', 
+    component: MainAppComponent,
     children: [
       {
         path: ROUTES.APP.ROUTES.PROFILE.PATH,
@@ -32,7 +33,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [],
-  imports: [ RouterModule.forChild(routes) ],
-  exports: [ RouterModule ],
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
 export class MainRoutingModule { }
