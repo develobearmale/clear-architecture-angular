@@ -8,12 +8,18 @@ import { Component, OnInit} from '@angular/core';
 })
 export class MainAppComponent implements OnInit{
 
+  public aaaa = 'asdasd'
   constructor(){}
 
   ngOnInit(): void {
    
   }
   
+  cabiame(){
+    this.aaaa = 'bbbbb'
+    console.log(this.aaaa)
+
+  }
 
 
 

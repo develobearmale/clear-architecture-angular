@@ -1,0 +1,335 @@
+@import '@angular/material/theming';
+
+// Be sure that you only ever include 'mat-core' mixin once!
+// it should not be included for each theme.
+@include mat-core(); 
+/* For use in src/lib/core/theming/_palette.scss */
+$md-ligth: (
+    50 : #fdfdfe,
+    100 : #fafbfc,
+    200 : #f7f8fb,
+    300 : #f3f5f9,
+    400 : #f1f3f7,
+    500 : #eef1f6,
+    600 : #eceff5,
+    700 : #e9edf3,
+    800 : #e7ebf2,
+    900 : #e2e7ef,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-dark: (
+    50 : #e4e5e8,
+    100 : #bcbfc6,
+    200 : #9094a1,
+    300 : #64697b,
+    400 : #42495e,
+    500 : #212942,
+    600 : #1d243c,
+    700 : #181f33,
+    800 : #14192b,
+    900 : #0b0f1d,
+    A100 : #5e77ff,
+    A200 : #2b4cff,
+    A400 : #0026f7,
+    A700 : #0022de,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #ffffff,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-darklight: (
+    50 : #ebebee,
+    100 : #ccccd6,
+    200 : #ababba,
+    300 : #89899e,
+    400 : #6f6f8a,
+    500 : #565675,
+    600 : #4f4f6d,
+    700 : #454562,
+    800 : #3c3c58,
+    900 : #2b2b45,
+    A100 : #9292ff,
+    A200 : #5f5fff,
+    A400 : #2c2cff,
+    A700 : #1313ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-lightdark: (
+    50 : #f2f3f6,
+    100 : #dee1e8,
+    200 : #c8ced8,
+    300 : #b2bac8,
+    400 : #a2abbd,
+    500 : #919cb1,
+    600 : #8994aa,
+    700 : #7e8aa1,
+    800 : #748098,
+    900 : #626e88,
+    A100 : #fafbff,
+    A200 : #c7d9ff,
+    A400 : #94b7ff,
+    A700 : #7aa5ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-blue: (
+    50 : #e8f2fe,
+    100 : #c5e0fd,
+    200 : #9ecbfb,
+    300 : #77b6f9,
+    400 : #59a6f8,
+    500 : #3c96f7,
+    600 : #368ef6,
+    700 : #2e83f5,
+    800 : #2779f3,
+    900 : #1a68f1,
+    A100 : #ffffff,
+    A200 : #f1f5ff,
+    A400 : #bed3ff,
+    A700 : #a4c2ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-basic: (
+    50 : #e5f5f5,
+    100 : #bee6e6,
+    200 : #93d6d5,
+    300 : #68c5c4,
+    400 : #47b8b7,
+    500 : #27acaa,
+    600 : #23a5a3,
+    700 : #1d9b99,
+    800 : #179290,
+    900 : #0e827f,
+    A100 : #b3fffd,
+    A200 : #80fffc,
+    A400 : #4dfffa,
+    A700 : #34fffa,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-success: (
+    50 : #ebfaf2,
+    100 : #cef2df,
+    200 : #aee9c9,
+    300 : #8de0b3,
+    400 : #74daa3,
+    500 : #5cd393,
+    600 : #54ce8b,
+    700 : #4ac880,
+    800 : #41c276,
+    900 : #30b764,
+    A100 : #fcfffd,
+    A200 : #c9ffdd,
+    A400 : #96ffbc,
+    A700 : #7dffac,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-warning: (
+    50 : #fef5e8,
+    100 : #fce6c5,
+    200 : #fad69e,
+    300 : #f7c577,
+    400 : #f6b85a,
+    500 : #f4ac3d,
+    600 : #f3a537,
+    700 : #f19b2f,
+    800 : #ef9227,
+    900 : #ec821a,
+    A100 : #ffffff,
+    A200 : #fff5eb,
+    A400 : #ffd9b8,
+    A700 : #ffcc9f,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-danger: (
+    50 : #fdeaee,
+    100 : #f9cbd5,
+    200 : #f6a8b9,
+    300 : #f2859d,
+    400 : #ef6a88,
+    500 : #ec5073,
+    600 : #ea496b,
+    700 : #e74060,
+    800 : #e43756,
+    900 : #df2743,
+    A100 : #ffffff,
+    A200 : #ffe8eb,
+    A400 : #ffb5bf,
+    A700 : #ff9ca9,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+// mandatory stuff for theming
+$bv-palette-primary: mat-palette($md-success);
+$bv-palette-accent:  mat-palette($md-warning);
+$bv-palette-basic: mat-palette($md-basic);
+$bv-palette-warning:  mat-palette($md-warning);
+$bv-palette-dark: mat-palette($md-dark);
+$bv-palette-darklight:  mat-palette($md-darklight);
+
+/*
+
+$candy-app-theme: mat.define-light-theme((
+  color: (
+    primary: $candy-app-primary,
+    accent: $candy-app-accent,
+    warn: $candy-app-warn,
+  )
+));*/
+
+
+
+// include the custom theme components into a theme object
+$bv-theme: mat-light-theme((
+    color: (
+        primary: $bv-palette-primary,
+        accent: $bv-palette-accent,
+        warn: $bv-palette-warning,
+      )
+));
+
+// include the custom theme object into the angular material theme
+@include angular-material-theme($bv-theme);
+

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { delay } from 'rxjs';
 import { LoadingService } from './core/services/loading.service';
+import { ProfileComponent } from '../app/presentation/views/profile/profile.component';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +25,13 @@ export class AppComponent implements OnInit {
       this.displayProgressSpinner = false;
     }, 3000);
   };
-  constructor(private loadingService: LoadingService){
+
+
+  timeLeft: number = 60;
+  
+  constructor(
+    private loadingService: LoadingService,
+    public dialog: MatDialog){
 
   }
 
@@ -32,6 +40,23 @@ export class AppComponent implements OnInit {
     .subscribe((loading) => {
       this.loading = loading;
     });
+
+    this.startTimer()
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(ProfileComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+   });
+  }
+
+  startTimer() {
+    const timer = setInterval(() => {
+      console.log('On Timer');
+      //this.openDialog()
+    }, 1000);
   }
 
 }
