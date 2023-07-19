@@ -12,3 +12,4 @@ EXPOSE 80
 #COMMAND TO RUN DOCKER docker build --r -f Dockerfile -t gesco-app:late
 #COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 #COPY --from=build /app/dist/gesco-app/ /usr/share/nginx/html
+#docker build -t eu.gcr.io/gcp-develobear-project/clear-architecture-angular:1.0 .

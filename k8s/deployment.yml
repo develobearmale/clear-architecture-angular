@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clear-architecture-angular-deploy
+  labels:
+    app: clear-architecture-angular
+    stack: frontend
+spec :
+  replicas: 1
+  selector:
+    matchLabels:
+      app: clear-architecture-angular
+  template:
+    metadata:
+      labels:
+        app: clear-architecture-angular
+    spec:
+      containers:
+        - name: ng-gke
+          image: "gcr.io/enduring-hue-391823/clear-architecture-angular:1.0"
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
